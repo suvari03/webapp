@@ -23,7 +23,9 @@
 
             <a href="index.html" id="logo">Kitapçım</a>
             <div class="nav-link" id="navLink">
-                
+                <span class="material-symbols-outlined side" onclick="hideMenu()">
+                    close
+                    </span>
                 <ul>
                     <li><a href="#">Anasayfa</a></li>
                     <li><a href="#">Hakkımızda</a></li>
@@ -32,6 +34,9 @@
                     <li><a href="#">İletişim</a></li>
                 </ul>
             </div>
+            <span class="material-symbols-outlined side" onclick="showMenu()">
+                menu
+                </span>
         </nav>
         <div class="text-box">
             <h1>Şehrimizin En Büyük Kitapçısı</h1>
@@ -93,17 +98,17 @@
             quibusdam.</p>
         <div class="row">
             <div class="services-col">
-                <img src="/webapp/img/8.jpg" alt="hizmetler">
+                <img src="img/8.jpg" alt="hizmetler">
                 <h3>Şube Kütüphanesi</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sint error cum?</p>
             </div>
             <div class="services-col">
-                <img src="/webapp/img/9.jpg" alt="KitapArama">
+                <img src="img/9.jpg" alt="KitapArama">
                 <h3>Kitap Arama</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sint error cum?</p>
             </div>
             <div class="services-col">
-                <img src="/webapp/img/10.jpg" alt="hizmetler">
+                <img src="img/10.jpg" alt="hizmetler">
                 <h3>Kafeterya</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sint error cum?</p>
             </div>
@@ -115,7 +120,7 @@
             quibusdam quo fugiat autem.</p>
         <div class="row">
             <div class="comments-col">
-                <img src="/webapp/img/women.jpg" alt="kadın">
+                <img src="img/women.jpg" alt="kadın">
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quam fugiat. Fugit.</p>
                     <h3>Ayşe Çelik</h3>
@@ -137,7 +142,7 @@
                 </div>
             </div>
             <div class="comments-col">
-                <img src="/webapp/img/man.jpg" alt="erkek">
+                <img src="img/man.jpg" alt="erkek">
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quam fugiat. Fugit.</p>
                     <h3>Mehmet Yılmaz</h3>
@@ -175,6 +180,15 @@
                     </span></a></p>
         </div>
     </footer>
+
+    <script>
+        function hideMenu(){
+            document.getElementById('navLink').style.right = '-200px';
+        }
+        function showMenu(){
+            document.getElementById('navLink').style.right = '0';
+        }
+    </script>
 </body>
 
 </html>

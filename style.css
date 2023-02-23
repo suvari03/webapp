@@ -158,11 +158,8 @@ h3 {
     margin: 10px 0px;
 }
 
-@media (max-width:800px) {
-    .row{
-        flex-direction: column;
-    }
-}
+
+
 
 
 .campus {
@@ -324,4 +321,50 @@ footer a {
     text-decoration: none;
     margin: 0;
     padding: 0;
+}
+
+nav .side {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .text-box h1{
+        font-size: 28px;
+
+    }
+    #logo{
+        font-size: 28px;
+        margin: 16px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    nav .side {
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
+        cursor: pointer;
+
+    }
+    .nav-link{
+        position: absolute;
+        background-color: #6d6d6df9;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px; 
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+
+
+    }
+    .nav-link ul li{
+        display: block;
+    }
+    .nav-link ul{
+        padding: 30px;
+    }
+    
 }
