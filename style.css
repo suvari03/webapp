@@ -13,7 +13,7 @@ body {
 .header {
     min-height: 100vh;
     min-width: 100%;
-    background-image: linear-gradient(to bottom right, rgba(4, 9, 30, 0.9), rgba(4, 9, 30, 0.3)), url(/img/1.jpg);
+    background-image: linear-gradient(to bottom right, rgba(4, 9, 30, 0.9), rgba(4, 9, 30, 0.3)), url(/webapp/img/1.jpg);
     background-position: top;
     background-size: cover;
     /* resmi çoğaltmıyor */
